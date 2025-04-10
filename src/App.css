@@ -1,0 +1,52 @@
+.product{
+  width: 250px;
+  min-height: 400px;
+  background-color: white;
+  border: 2px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+
+}
+body{
+  background:linear-gradient(to right, #00c6ff, #0072ff);
+}
+.product img{
+
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+input{
+  padding: 10px;
+  margin: 10px 0px;
+  border: 2px solid rgba(255, 255, 255, 0.726);
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  &::placeholder{
+    color: white;
+  }
+}
+.rating{
+  font-size: 15px;
+  position: absolute;
+  top: -22px;
+  right: -21px;
+  background-color: orange;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.245);
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -25,7 +25,7 @@ const ViewProducts = ({category}) => {
           {filterProducts.map((product) => (
             <div key={product.id} className='product p-5 rounded-lg '>
               <div className='flex justify-center items-start  imageContainer'>
-              <img src={product.images[1]} loading='lazy' alt={product.title} title={product.title} style={{height:150,width:130}} ></img>
+              <img src={product.images[1]||product.images[0]} loading='lazy' alt={product.title} title={product.title} style={{height:150,width:130}} ></img>
               <span className='rating'>
               <i class="fa-regular fa-star mr-1"></i> {product.rating}
               </span>

@@ -4,10 +4,8 @@ import { useEffect, useState } from "react"
 
 export const FetchData= (category)=>{
     const [Products, setProducts] = useState([]);
-
-    var endPoint=`https://dummyjson.com/products/category/${category}`;
-    console.log(endPoint);
     
+    var endPoint=`https://dummyjson.com/products/category/${category}`;
 
     useEffect(() => {
         fetchProducts();

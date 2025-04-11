@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  box-shadow: 5px 5px 0px black;
 
 
 }
@@ -16,8 +17,8 @@ body{
 }
 .product img{
 
-  background-position: center;
-  background-size: cover;
+ filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.414));
+
   
 }
 

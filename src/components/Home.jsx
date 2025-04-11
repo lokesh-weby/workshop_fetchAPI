@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className='h-screen flex flex-col justify-center items-center'>
       <div className='text-center px-3 w-full'>
-        <h1 className='sm:text-5xl text-3xl my-5 text-white'>Welcome to Gtech E-Commerce</h1>
+        <h1 className='sm:text-5xl text-3xl my-5 text-white'>Welcome to Weby E-Commerce</h1>
         <h2 className='sm:text-3xl text-xl text-white'>Choose a category to view products</h2>
       </div>
         <div className='flex justify-center items-center my-5 flex-wrap w-full'>

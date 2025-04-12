@@ -13,7 +13,7 @@ const ViewProducts = ({category}) => {
     
     return (
       <div className='min-h-screen flex flex-col justify-around items-center'>
-        <h1 className='text-2xl text-white my-5'>Products</h1>
+        <h1 className='text-2xl text-white my-5'>{category}</h1>
 
         <div>
           <input type="text" onChange={(e)=>{setQuery(e.target.value.toLowerCase())}} placeholder='Search..' autoComplete='false'/>

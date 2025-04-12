@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react"
 
-
-
 export const FetchData= (category)=>{
     const [Products, setProducts] = useState([]);
     
@@ -12,16 +10,16 @@ export const FetchData= (category)=>{
     },[endPoint]);
 
     async function fetchProducts(){
-        fetch(endPoint)
-        .then((response) => response.json())
-        .then((json) => setProducts(json.products))
-        .catch((error) => console.log(error));
+        try {
+            const response = await fetch(endPoint);
+            const data = await response.json();
+            setProducts(data.products);  
+        } catch (error) {
+            console.log(error);
+            
+        }
     }
-
-    // console.log(data);
-
+    // console.log(Products);
     return {Products};
-
-
 
 }

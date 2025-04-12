@@ -1,17 +1,15 @@
 import './App.css';
-import { Route,Routes, useLocation } from 'react-router-dom'
+import { Route,Routes } from 'react-router-dom'
 import React from 'react'
 import ViewProducts from './components/ViewProducts'
 import Home from './components/Home'
 import Nav from './components/Nav'
 
 const App = () => {
-  const location=useLocation();
  return(
   <>
-
   <Nav/>
-  <Routes location={location} key={location.pathname}>
+  <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/products/laptops' element={<ViewProducts category="laptops" />}/>
     <Route path='/products/smartphones' element={<ViewProducts category="smartphones"/>}/>
@@ -25,7 +23,6 @@ const App = () => {
     <Route path='/products/mens-watches' element={<ViewProducts category="mens-watches"/>}/>
     <Route path='/products/motorcycle' element={<ViewProducts category="motorcycle"/>}/>
   </Routes>
- 
   </>
  )
 }
